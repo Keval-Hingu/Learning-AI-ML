@@ -24,6 +24,11 @@ print(a[:3]) # [4 5 9] -> Elements from index 0 to 2 (3 is not included)
 print(a[1:]) # [5 9 8] -> Elements from index 1 to the end of the array
 print(a[:]) # [4 5 9 8] -> All elements of the array
 
+# Negative Slicing
+print(a[-3:-1]) # [5 9] -> Elements from index -3 to -2 (-1 is not included)
+print(a[-2:]) # [9 8] -> Elements from index -2 to the end of the array
+print(a[:-2]) # [4 5] -> Elements from index 0 to -3 (-2 is not included)
+
 
 # 2D Array Indexing and Slicing
 b = np.array([[1,2,3,4],[5,6,7,8]])
@@ -59,3 +64,5 @@ print(b[:1]) # [[1 2 3 4]] -> Elements from index
 print(b[1:]) # [[5 6 7 8]] -> Elements from index 1 to the end of the array
 print(b[:]) # [[1 2 3 4] [5 6 7 8]] -> All elements of the array
 
+# Negative Slicing
+print(b[-2:-1]) # [[1 2 3 4]] -> Elements
